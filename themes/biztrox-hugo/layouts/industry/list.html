@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- Industries Overview Section -->
+{{ if .Content }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 order-2 order-lg-1">
+        <span class="section-title-sm h5">Explore</span>
+        <h2 class="section-title section-title-border-half">Industries We Serve</h2>
+        <div class="content">{{ .Content | markdownify }}</div>
+      </div>
+      <div class="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="industries-overview" class="w-100">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Industry Cards with Pagination -->
+<section class="section bg-light">
+  <div class="container">
+    {{ $paginator := .Paginate .Pages }}
+    <div class="row justify-content-center">
+      {{ range $paginator.Pages }}
+        {{ .Render "post" }}
+      {{ end }}
+    </div>
+    
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="mt-5">
+      <ul class="pagination justify-content-center">
+        {{ if $paginator.HasPrev }}
+        <li class="page-item"><a class="page-link" href="{{ $paginator.Prev.URL }}">Prev</a></li>
+        {{ else }}
+        <li class="page-item disabled"><span class="page-link">Prev</span></li>
+        {{ end }}
+
+        {{ range $paginator.Pagers }}
+        <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+          <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+        </li>
+        {{ end }}
+
+        {{ if $paginator.HasNext }}
+        <li class="page-item"><a class="page-link" href="{{ $paginator.Next.URL }}">Next</a></li>
+        {{ else }}
+        <li class="page-item disabled"><span class="page-link">Next</span></li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

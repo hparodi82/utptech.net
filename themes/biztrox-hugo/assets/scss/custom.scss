@@ -1,0 +1,524 @@
+// Custom styles for page banner
+.page-title.overlay {
+  position: relative;
+  height: auto !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  aspect-ratio: 21/9;  // Ultra-wide aspect ratio for banners
+  background-size: cover !important;  // Changed from 75% auto to cover
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-color: #000;
+  padding: 4rem 0;  // Reduced padding to accommodate wider aspect ratio
+  display: flex;
+  align-items: center;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+// Make sure content is positioned properly
+.page-title .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+// Hero slider styles - enhanced for better visuals
+.hero-slider {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  
+  .swiper-wrapper {
+    height: auto !important;
+  }
+  
+  .hero-slider-item {
+    aspect-ratio: 21/9;
+    min-height: 300px !important;
+    max-height: 600px !important;
+    height: auto !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+    // Enhanced background image handling
+    &[style*="background-image"] {
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      transition: transform 0.3s ease-out;
+      
+      // Improved overlay with gradient
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.7) 100%
+        ) !important;
+        z-index: 1;
+      }
+      
+      // Subtle zoom effect on hover
+      &:hover {
+        transform: scale(1.02);
+        transition: transform 8s ease-out;
+      }
+    }
+    
+    // Enhanced content styling
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      
+      // Add subtle text shadow for better readability
+      * {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+      
+      h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 1.5rem;
+        
+        &:after {
+          content: '';
+          display: block;
+          width: 80px;
+          height: 4px;
+          background: #ffffff;
+          margin-top: 1rem;
+          border-radius: 2px;
+        }
+      }
+      
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+      
+      .btn {
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  
+  // Enhanced navigation arrows
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+    
+    &::after {
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
+  
+  // Enhanced pagination dots
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    
+    &-active {
+      background: #ffffff;
+      transform: scale(1.2);
+    }
+  }
+}
+
+// Animation keyframes
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Media query for smaller screens
+@media (max-width: 768px) {
+  .page-title.overlay,
+  .hero-slider {
+    .hero-slider-item {
+      aspect-ratio: 16/9;
+      min-height: 250px !important;
+      
+      .hero-content {
+        h1, h2, h3, h4, h5, h6 {
+          font-size: calc(1.5rem + 1vw);
+        }
+        
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      
+      &::after {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Specific styles for all service pages
+.service .page-title.overlay,
+body[class*="service-"] .page-title.overlay,
+.section-service .page-title.overlay {
+  aspect-ratio: 21/9;  // Ultra-wide aspect ratio
+  background-size: cover !important;  // Changed from 75% auto to cover
+  padding: 4rem 0;
+  
+  &[style*="structured-cabling"],
+  &[style*="networking"],
+  &[style*="managed-it"],
+  &[style*="it-consulting"],
+  &[style*="cybersecurity"],
+  &[style*="communications-systems"] {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
+// Ensure images maintain aspect ratio
+.service .post-content img,
+.hero-slider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+// Specific adjustment for contact page
+.contact .page-title.overlay {
+  background-position: center 40%;
+}
+
+// Specific styles for service pages
+.service.single .page-title.overlay,
+.service.list .page-title.overlay,
+body.section-service .page-title.overlay {
+  min-height: 500px;
+  max-height: 600px;
+  background-size: 100% auto !important;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+  &::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+// Ensure images maintain aspect ratio
+.service.single .post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+// Specific styles for structured cabling page
+body.service.single .page-title.overlay {
+  height: auto;
+  min-height: 300px;
+  padding: 0;
+  
+  &::before {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+// Additional specific selector for structured cabling
+[data-bg-image*="structured-cabling-banner"] {
+  background-size: 100% !important;
+  background-position: top center !important;
+  height: auto !important;
+  aspect-ratio: 16/9;  // This helps maintain the image's proportions
+}
+
+// Even more specific override for service pages
+.service .page-title.overlay {
+  background-size: 75% auto !important;
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Enhanced Service Section Styles
+.service {
+  // Service banner styling
+  &.single .page-title.overlay,
+  &.list .page-title.overlay,
+  body.section-service .page-title.overlay {
+    min-height: 400px;
+    max-height: 500px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      transition: background 0.3s ease;
+    }
+    
+    .container {
+      position: relative;
+      z-index: 2;
+      
+      h1, h2, h3 {
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        position: relative;
+        
+        &:after {
+          content: '';
+          display: block;
+          width: 80px;
+          height: 4px;
+          background: #ffffff;
+          margin-top: 1rem;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  // Service card styling
+  .service-item {
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      
+      .service-image img {
+        transform: scale(1.05);
+      }
+      
+      .service-content {
+        background: #f8f9fa;
+      }
+    }
+    
+    .service-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.3),
+          transparent
+        );
+      }
+    }
+    
+    .service-content {
+      padding: 25px;
+      background: #ffffff;
+      transition: background 0.3s ease;
+      
+      h4 {
+        margin-bottom: 15px;
+        font-size: 1.25rem;
+        color: #333;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: #007bff;
+        }
+      }
+      
+      p {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+      
+      .read-more {
+        font-weight: 600;
+        color: #007bff;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 2px;
+        transition: all 0.3s ease;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: #007bff;
+          transition: width 0.3s ease;
+        }
+        
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  // Service content area
+  .service-content-area {
+    padding: 60px 0;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2, h3, h4 {
+      margin: 30px 0 15px;
+      color: #333;
+      position: relative;
+      padding-bottom: 10px;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: #007bff;
+        border-radius: 2px;
+      }
+    }
+    
+    p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    ul, ol {
+      margin: 20px 0;
+      padding-left: 20px;
+      
+      li {
+        color: #555;
+        margin-bottom: 10px;
+        line-height: 1.6;
+        
+        &::marker {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments for services
+@media (max-width: 768px) {
+  .service {
+    .service-item {
+      margin-bottom: 20px;
+      
+      .service-content {
+        padding: 20px;
+        
+        h4 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    
+    .service-content-area {
+      padding: 40px 0;
+      
+      h2, h3, h4 {
+        margin: 20px 0 10px;
+      }
+    }
+  }
+} 

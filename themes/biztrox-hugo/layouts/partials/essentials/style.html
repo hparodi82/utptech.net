@@ -1,0 +1,39 @@
+<!-- DNS preconnect -->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="//ajax.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+<!-- Load plugin CSS files separately -->
+{{ range site.Params.plugins.css }}
+  {{ if findRE "^http" .link }}
+    <link rel="stylesheet" href="{{ .link }}" crossorigin="anonymous" {{ .attributes | safeHTMLAttr }}>
+  {{ else }}
+    {{ $css := resources.Get .link }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ end }}
+{{ end }}
+
+<!-- Compile SCSS separately -->
+{{ $style := resources.Get "scss/style.scss" | toCSS }}
+
+<!-- Optionally minify & fingerprint in production -->
+{{ if hugo.IsProduction }}
+  {{ $style = $style | minify | fingerprint }}
+{{ end }}
+
+<!-- Load compiled SCSS -->
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ with $style.Data.Integrity }}integrity="{{ . }}"{{ end }}>

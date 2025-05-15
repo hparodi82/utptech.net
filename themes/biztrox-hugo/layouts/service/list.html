@@ -1,0 +1,97 @@
+{{ define "main" }}
+
+<!-- Services Overview Section -->
+{{ if .Content }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 order-2 order-lg-1">
+        <span class="section-title-sm h5">Explore</span>
+        <h2 class="section-title section-title-border-half">Services We Offer</h2>
+        <div class="content">{{ .Content | markdownify }}</div>
+      </div>
+      <div class="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="services-overview" class="w-100">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Service Cards with Pagination -->
+<section class="section bg-light">
+  <div class="container">
+    {{ $paginator := .Paginate .Pages }}
+    <div class="row justify-content-center">
+      {{ range $paginator.Pages }}
+        {{ .Render "post" }}
+      {{ end }}
+    </div>
+    
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="mt-5">
+      <ul class="pagination justify-content-center">
+        {{ if $paginator.HasPrev }}
+        <li class="page-item"><a class="page-link" href="{{ $paginator.Prev.URL }}">Prev</a></li>
+        {{ else }}
+        <li class="page-item disabled"><span class="page-link">Prev</span></li>
+        {{ end }}
+
+        {{ range $paginator.Pagers }}
+        <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+          <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+        </li>
+        {{ end }}
+
+        {{ if $paginator.HasNext }}
+        <li class="page-item"><a class="page-link" href="{{ $paginator.Next.URL }}">Next</a></li>
+        {{ else }}
+        <li class="page-item disabled"><span class="page-link">Next</span></li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Clients Section (optional) -->
+{{ with .Params.satisfied_clients }}
+{{ if .enable }}
+<section class="clients section bg-secondary overlay-dark" {{ partial `bg-image.html` (dict `Src` .bg_image ) | safeHTMLAttr }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <span class="section-title-sm h5 text-color">{{ .subtitle | markdownify }}</span>
+        <h2 class="text-white mb-20">{{ .title | markdownify }}</h2>
+        <p class="text-white">{{ .content | markdownify }}</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row justify-content-around align-items-center">
+          {{ range .logo }}
+          <div class="col-6 text-center">
+            <img src="{{ . | relURL }}" alt="client-logo" class="py-3">
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Testimonial Section (optional) -->
+{{ if .Params.testimonial.enable }}
+  {{ if .Params.testimonial.inherit_homepage }}
+    {{ with .GetPage "/" }}
+      {{ partial "components/testimonial.html" . }}
+    {{ end }}
+  {{ else }}
+    {{ partial "components/testimonial.html" . }}
+  {{ end }}
+{{ end }}
+
+{{ end }}

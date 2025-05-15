@@ -1,0 +1,53 @@
+{
+  "build": {
+    "command": "hugo --gc --minify",
+    "environment": {
+      "HUGO_VERSION": "0.121.1"
+    }
+  },
+  "routes": [
+    {
+      "pattern": "/*",
+      "zone_name": "${CF_ZONE_NAME}",
+      "cache": {
+        "browser": {
+          "ttl": 31536000
+        },
+        "edge": {
+          "ttl": 31536000
+        }
+      },
+      "minify": {
+        "js": true,
+        "css": true,
+        "html": true
+      },
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
+        "Report-To": "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v3?s=\"}],\"include_subdomains\":true}",
+        "NEL": "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
+      }
+    }
+  ],
+  "optimization": {
+    "image": {
+      "format": ["webp", "avif"],
+      "quality": 85
+    },
+    "script": {
+      "defer": true,
+      "preload": true
+    },
+    "css": {
+      "preload": true
+    }
+  },
+  "analytics": {
+    "token": "${CF_ANALYTICS_TOKEN}",
+    "spa": false
+  }
+} 

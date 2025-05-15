@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<!-- Industry Content Section -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 py-100">
+        {{ if .IsSection }}
+          <!-- List View -->
+          <div class="row">
+            {{ range .Pages }}
+            <div class="col-md-6 mb-4">
+              {{ .Render "post" }}
+            </div>
+            {{ end }}
+          </div>
+        {{ else }}
+          <!-- Single Industry View -->
+          <div class="industry-single">
+            {{ with .Params.image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="img-fluid w-100 mb-4">
+            {{ end }}
+            
+            <h2 class="mb-4">{{ .Title }}</h2>
+            
+            <div class="content">
+              {{ .Content }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+      {{/* ------------------------------------------
+      Sidebar Section — Commented Out for now
+      ------------------------------------------
+      <div class="col-lg-4">
+        {{ partial "components/sidebar.html" . }}
+      </div>
+      */}}
+    </div>
+  </div>
+</section>
+
+{{ end }}
