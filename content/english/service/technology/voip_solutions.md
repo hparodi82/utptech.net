@@ -2,7 +2,7 @@
 title: "VoIP Solutions"
 draft: true
 date: 2018-09-25T15:51:35+06:00
-description: "This is meta description"
+description: "Business VoIP phone systems in Texas — reliable, cost-effective voice solutions that scale with your organization."
 image: images/service/service-1.jpg
 bg_image: images/background/page-title.jpg
 icon: ti-bar-chart # themify icon pack : https://themify.me/themify-icons

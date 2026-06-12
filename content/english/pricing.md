@@ -2,7 +2,7 @@
 title: "Pricing"
 date: 2018-07-12T18:19:33+06:00
 bg_image: images/background/page-title.jpg
-description: "This is meta description"
+description: "Transparent pricing for Managed IT, structured cabling, VoIP, fire safety, and facility services from Up to Par Technologies in Texas."
 layout: "pricing"
 
 ########################## Pricing ########################

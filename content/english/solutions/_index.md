@@ -2,7 +2,7 @@
 title: "Service"
 date: 2018-07-12T18:19:33+06:00
 bg_image: images/banner/services-11.jpg
-description : "This is meta description"
+description : "Explore complete technology, safety, and facility solutions from Up to Par Technologies — serving businesses across Texas."
 
 ################## Satisfied clients ###############
 satisfied_clients:

@@ -45,7 +45,7 @@ link = "contact"
 
 # contact info
 [contact_info]
-address = "1234 Best Technology Solutions Ever"
+address = "Leander, TX"
 email = "info@utptech.net"
 mobile = "+1 (512)803-6232"
 
@@ -67,11 +67,11 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-author = "Themefisher" 
-description = "This is meta description" 
+author = "Up to Par Technologies" 
+description = "Up to Par Technologies provides Managed IT, structured cabling, cybersecurity, VoIP, fire safety, and pressure washing services to businesses across Texas." 
 image = "images/favicon.png" # this image will be used as fallback if a page has no image of its own
 bg_image = "images/background/page-title.jpg" # this image will be used as fallback if a page has no image of its own
-keywords = ["Boilerplate", "Hugo", "Themefisher", "GetHugoThemes"] 
+keywords = ["managed IT services Texas", "structured cabling Austin", "cybersecurity solutions", "VoIP solutions", "IT consulting Texas", "fire safety services", "pressure washing commercial", "Up to Par Technologies", "network solutions Texas"] 
 
 # matomo tracking: see https://matomo.org/
 [matomo]

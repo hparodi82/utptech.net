@@ -2,7 +2,7 @@
 title: "Networking"
 draft: true
 date: 2018-09-29T11:51:17+06:00
-description: "This is meta description"
+description: "Enterprise networking solutions in Texas — LAN/WAN design, setup, and management to keep your business connected and secure."
 image: images/service/service-2.jpg
 bg_image: images/background/page-title.jpg
 icon: ti-world

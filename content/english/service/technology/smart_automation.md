@@ -2,7 +2,7 @@
 title: "Smart Home/Business"
 draft: true
 date: 2018-09-25T15:51:35+06:00
-description: "This is meta description"
+description: "Smart home and business automation in Texas — intelligent systems for lighting, security, climate, and more."
 image: images/service/service-1.jpg
 bg_image: images/background/page-title.jpg
 icon: ti-light-bulb # themify icon pack : https://themify.me/themify-icons

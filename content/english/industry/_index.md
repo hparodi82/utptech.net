@@ -2,7 +2,7 @@
 title: "Industries We Serve"
 date: 2018-07-12T18:19:33+06:00
 bg_image: images/banner/home/industries-banner-1.jpg
-description : "This is meta description"
+description : "Up to Par Technologies serves healthcare, dental, education, government, hospitality, and corporate industries across Texas with integrated IT and facility solutions."
 
 ################## Satisfied clients ###############
 satisfied_clients:
