@@ -4,6 +4,7 @@
 {{- $url := .Permalink -}}
 
 <!-- Meta -->
+{{- if .Params.noindex }}<meta name="robots" content="noindex, nofollow" />{{- end }}
 <meta name="description" content="{{ $description }}" />
 <meta name="author" content="{{ site.Params.metadata.author }}" />
 <meta name="keywords" content="{{ delimit site.Params.metadata.keywords ", " }}" />

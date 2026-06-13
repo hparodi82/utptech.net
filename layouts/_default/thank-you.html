@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section style="min-height:60vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;">
+  <div style="text-align:center;max-width:520px;">
+    <div style="width:72px;height:72px;background:#28a745;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;color:#fff;">&#x2713;</div>
+    <h1 style="margin-bottom:16px;">Message Sent!</h1>
+    <p style="color:#666;font-size:1.1rem;line-height:1.7;margin-bottom:32px;">Thank you for reaching out to Up to Par Technologies. We typically respond within one business day.</p>
+    <a href="/" style="display:inline-block;padding:12px 28px;background:#007bff;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;">Return to Homepage</a>
+  </div>
+</section>
+
+<script>
+(function () {
+  var source = new URLSearchParams(window.location.search).get("source") || "Website";
+  function fire() {
+    if (typeof gtag === "function") {
+      gtag("event", "generate_lead", {
+        event_category: "Contact Form",
+        event_label: source
+      });
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fire);
+  } else {
+    fire();
+  }
+})();
+</script>
+{{ end }}
