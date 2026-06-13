@@ -1,26 +1,16 @@
 {{ define "main" }}
 
-{{ "<!-- service single -->" | safeHTML }}
+<!-- service single -->
 <section class="section">
 	<div class="container">
 		<div class="row">
-			{{ "<!-- sidebar -->" | safeHTML }}
+			<!-- sidebar -->
 			<aside class="col-lg-4 order-lg-1 order-2">
 				<ul class="service-menu ps-0 border rounded mb-50 overflow-hidden">
-					{{ $sidebarPages := slice
-						"service/technology/managed_it"
-						"service/technology/it_consulting"
-						"service/technology/structured_cabling"
-						"service/technology/mit-smart-setup"
-						"service/technology/mit-voip"
-						"service/technology/mit-ip-cameras"
-					}}
-					{{ range $sidebarPages }}
-					{{ with site.GetPage . }}
+					{{ range (where site.RegularPages "Type" "service")}}
 					<li class="border-bottom-not-last">
 						<a class="d-block font-primary text-dark p-4" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
 					</li>
-					{{ end }}
 					{{ end }}
 				</ul>
 
@@ -37,26 +27,29 @@
 				</script>
 
 				{{ if .Params.Brochure }}
-				{{ "<!-- Brochure -->" | safeHTML }}
+				<!-- Brochure -->
 				<div class="rounded border py-3 px-4 mb-50 d-flex gap-1">
 					<i class="d-inline-block me-2 text-dark ti-files" style="font-size: 20px;"></i>
 					<div>
 						<h3 class="mb-1 d-inline-block h4">{{ i18n "service_brochure" }}</h3>
-						<a class="font-secondary text-color d-block" href="{{ .Params.Brochure | absURL }}">{{ i18n "download_pdf" }}</a>
+						<a class="font-secondary text-color d-block" href="{{ .Params.Brochure | absURL }}">{{ i18n
+							"download_pdf" }}</a>
 					</div>
 				</div>
 				{{ end }}
 
 				{{ if .Params.RegularDay }}
-				{{ "<!-- Opening Hours -->" | safeHTML }}
+				<!-- Opening Hours -->
 				<div class="mb-50">
 					<h3 class="mb-20 h5">{{ i18n "opening_hours" }}</h3>
 					<ul class="border rounded px-4 py-3">
 						<li class=" font-secondary my-3 text-color">
-							<span class="d-inline-block fw-light text-dark" style="width: 130px;">{{ .Params.RegularDay }}:</span>{{ .Params.RegularTime }}
+							<span class="d-inline-block fw-light text-dark" style="width: 130px;">{{ .Params.RegularDay }}:</span>{{
+							.Params.RegularTime }}
 						</li>
 						<li class=" font-secondary my-3 text-color">
-							<span class="d-inline-block fw-light text-dark" style="width: 130px;">{{ .Params.HalfDay }}:</span>{{ .Params.HalfTime }}
+							<span class="d-inline-block fw-light text-dark" style="width: 130px;">{{ .Params.HalfDay }}:</span>{{
+							.Params.HalfTime }}
 						</li>
 						<li class="text-danger font-secondary my-3">
 							<span class="d-inline-block fw-light text-dark" style="width: 130px;">{{ .Params.OffDay }}:</span>Closed
@@ -67,7 +60,8 @@
 
 				<div class="mb-50">
 					<h3 class="mb-20 h5">{{ i18n "free_consultation" }}</h3>
-					<form action="{{ site.Params.contact_form_action | safeURL }}" class="row">
+					<form action="{{ site.Params.contact_form_action | safeURL }}" method="post" class="row">
+						<input type="hidden" name="source" value="{{ .Title }} Service Page">
 						<div class="col-lg-12">
 							<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
 						</div>
@@ -78,7 +72,8 @@
 							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
 						</div>
 						<div class="col-lg-12">
-							<textarea name="question" id="question" class="form-control p-2" placeholder="Your Question Here..." style="height: 150px;"></textarea>
+							<textarea name="message" id="message" class="form-control p-2" placeholder="Your Question Here..."
+								style="height: 150px;"></textarea>
 						</div>
 						<div class="col-lg-12">
 							<button class="btn btn-primary" type="submit">{{ i18n "submit" }}</button>
@@ -86,42 +81,16 @@
 					</form>
 				</div>
 			</aside>
-			{{ "<!-- service single content -->" | safeHTML }}
+			<!-- service single content -->
 			<div class="col-lg-8 order-lg-2 order-1">
 				{{ partial "image.html" (dict "Src" .Params.Image "Alt" "service" "Class" `w-100 mb-60 rounded-top`) }}
 				<div class="post-content">
 					{{ .Content }}
 				</div>
-
-				{{ if .Params.subservices }}
-				<div class="mt-5">
-					<h3 class="mb-4">What's Included</h3>
-					<div class="row">
-						{{ range .Params.subservices }}
-						{{ with site.GetPage . }}
-						<div class="col-md-6 mb-4">
-							<a href="{{ .Permalink }}" class="text-decoration-none">
-								<div class="card h-100 p-4 border" style="transition: box-shadow 0.2s; border-radius: 8px;">
-									<div class="d-flex align-items-center mb-3">
-										{{ with .Params.icon }}
-										<i class="{{ . }} me-3" style="font-size: 1.8rem; color: #041E42;"></i>
-										{{ end }}
-										<h5 class="mb-0 text-dark">{{ .Title }}</h5>
-									</div>
-									<p class="text-muted mb-3" style="font-size: 0.9rem;">{{ .Params.description }}</p>
-									<span class="text-primary" style="font-size: 0.85rem; font-weight: 600;">Learn More →</span>
-								</div>
-							</a>
-						</div>
-						{{ end }}
-						{{ end }}
-					</div>
-				</div>
-				{{ end }}
 			</div>
 		</div>
 	</div>
 </section>
-{{ "<!-- /service single -->" | safeHTML }}
+<!-- /service single -->
 
 {{ end }}
