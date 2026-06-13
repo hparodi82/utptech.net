@@ -1,39 +1,19 @@
 steps:
-  build:
+  - name: build
     image: hugomods/hugo:exts-non-root
     commands:
       - npm install
       - hugo --minify
     when:
-      event: [push, manual]
-      branch: main
+      - event: [push, manual]
+        branch: main
 
-  docker-build:
-    image: docker:cli
+  - name: deploy
+    image: alpine
+    commands:
+      - cp -r public/* /deploy/
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    commands:
-      - docker login http://192.168.30.11:8181 -u $HARBOR_USER -p $HARBOR_PASS
-      - docker build -t 192.168.30.11:8181/hugo-site/hugo-site:latest .
-      - docker push 192.168.30.11:8181/hugo-site/hugo-site:latest
-    environment:
-      HARBOR_USER:
-        from_secret: harbor_username
-      HARBOR_PASS:
-        from_secret: harbor_password
+      - /home/hrparodi/hugo-site:/deploy
     when:
-      event: [push, manual]
-      branch: main
-
-  deploy-k3s:
-    image: bitnami/kubectl:latest
-    when:
-      event: [push, manual]
-      branch: main
-    environment:
-      KUBECONFIG_DATA:
-        from_secret: kubeconfig
-    commands:
-      - mkdir -p ~/.kube
-      - printenv KUBECONFIG_DATA > ~/.kube/config
-      - kubectl rollout restart deployment/hugo-site
+      - event: [push, manual]
+        branch: main
