@@ -19,7 +19,7 @@ mainSections = ["blog"]
 # image gallery shortcode
 image_gallery = true
 # contact form action
-contact_form_action = "https://forms.utptech.net/submit"
+contact_form_action = "https://www.utptech.net/api/contact"
 # google tag manager, see https://developers.google.com/tag-manager/
 google_adsense = "" # example: ca-pub-xxxxxxxxxxxxxxxx
 google_tag_manager = "" # example: G-XXXXXXXXXX
