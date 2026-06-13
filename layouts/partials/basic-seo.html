@@ -1,0 +1,65 @@
+{{- $description := .Params.description | default site.Params.metadata.description -}}
+{{- $image := .Params.image | default site.Params.metadata.image -}}
+{{- $title := .Title | default site.Title -}}
+{{- $url := .Permalink -}}
+
+<!-- Meta -->
+<meta name="description" content="{{ $description }}" />
+<meta name="author" content="{{ site.Params.metadata.author }}" />
+<meta name="keywords" content="{{ delimit site.Params.metadata.keywords ", " }}" />
+<link rel="canonical" href="{{ $url }}" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:image" content="{{ $image | absURL }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:image" content="{{ $image | absURL }}" />
+
+<!-- LocalBusiness Schema -->
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Up to Par Technologies",
+  "description": {{ $description | jsonify }},
+  "url": "https://www.utptech.net",
+  "telephone": "+15128036232",
+  "email": "info@utptech.net",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Leander",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IT Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed IT Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structured Cabling" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VoIP Solutions" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Consulting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IP Surveillance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smart Office Automation" } }
+    ]
+  },
+  "logo": "https://www.utptech.net/images/banner/home/logo-001.png",
+  "image": "https://www.utptech.net/images/banner/home/logo-001.png",
+  "sameAs": []
+}
+</script>
+{{- end }}
