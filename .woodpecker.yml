@@ -13,9 +13,9 @@ steps:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
-      - docker login http://192.168.30.11:8080 -u $HARBOR_USER -p $HARBOR_PASS
-      - docker build -t 192.168.30.11:8080/hugo-site/hugo-site:latest .
-      - docker push 192.168.30.11:8080/hugo-site/hugo-site:latest
+      - docker login http://192.168.30.11:8181 -u $HARBOR_USER -p $HARBOR_PASS
+      - docker build -t 192.168.30.11:8181/hugo-site/hugo-site:latest .
+      - docker push 192.168.30.11:8181/hugo-site/hugo-site:latest
     environment:
       HARBOR_USER:
         from_secret: harbor_username
