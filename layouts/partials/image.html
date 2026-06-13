@@ -1,0 +1,15 @@
+{{- $src := .Src -}}
+{{- $alt := .Alt | default "" -}}
+{{- $class := .Class | default "" -}}
+{{- $size := .Size -}}
+{{- if $src -}}
+  {{- $img := resources.Get $src -}}
+  {{- if $img -}}
+    {{- if $size -}}
+      {{- $img = $img | images.Fit $size -}}
+    {{- end -}}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy">
+  {{- else -}}
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy">
+  {{- end -}}
+{{- end -}}
