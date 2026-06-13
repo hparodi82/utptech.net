@@ -10,7 +10,7 @@ type: "industry"
 ### Safe. Connected. Compliant.
 
 At **Up To Par Technologies**, we support **medical offices, dental practices, laboratories, and healthcare facilities** with end-to-end solutions that protect patients, data, and staff.  
-Our certified engineers and technicians deliver HIPAA-compliant IT infrastructure, reliable cabling, and fire-safety systems designed for mission-critical healthcare environments.
+Our certified engineers and technicians deliver HIPAA-compliant IT infrastructure, reliable cabling, and cybersecurity solutions designed for mission-critical healthcare environments.
 
 ---
 
@@ -22,11 +22,8 @@ Our certified engineers and technicians deliver HIPAA-compliant IT infrastructur
 - 🧵 **Structured Cabling & Low-Voltage Infrastructure**  
   Clean, labeled, and certified cabling for exam rooms, imaging labs, and administrative offices — optimized for uptime and bandwidth.
 
-- 🔥 **Fire Protection & Life-Safety Systems**  
-  Licensed inspection and maintenance of fire extinguishers, suppression systems, and emergency lighting per NFPA and state codes.
-
-- 💦 **Facility Power Washing & Maintenance**  
-  Exterior cleaning for clinics, hospitals, and healthcare campuses — maintaining sanitation and professional presentation.
+- 🔐 **Cybersecurity & Compliance**  
+  Endpoint protection, network segmentation, and security policies designed to protect patient data and maintain HIPAA compliance.
 
 - 📹 **Security & Access Control Integration**  
   Camera systems and controlled-access entry points that safeguard staff, patients, and equipment.
@@ -37,7 +34,7 @@ Our certified engineers and technicians deliver HIPAA-compliant IT infrastructur
 
 - HIPAA-Trained & Certified Technicians  
 - Reliable On-Site & Remote IT Support  
-- Code-Compliant Installations (NFPA, OSHA, ADA)  
+- Code-Compliant Installations (HIPAA, OSHA, ADA)  
 - Scalable Solutions for Clinics to Hospital Networks  
 - Local, Responsive, and Confidential Service  
 

@@ -2,7 +2,7 @@
 title: "Dental Office Solutions"
 date: 2025-10-31T13:45:00+06:00
 bg_image: images/banner/industry/dental/industry-dental-banner-2.jpg
-description: "Technology, fire safety, and facility solutions tailored for modern dental practices."
+description: "Technology solutions tailored for modern dental practices — Managed IT, cabling, VoIP, and security."
 type: industry
 url: "/industry/dental/"
 ---
@@ -22,12 +22,6 @@ From secure IT networks and patient data protection to clean, code-compliant fac
 
 - 🧵 **Structured Cabling & Network Installation**  
   Clean and organized CAT6 and fiber cabling for dental suites, imaging rooms, and front-office networks — professionally labeled and certified.
-
-- 🔥 **Fire Extinguisher & Life-Safety Systems**  
-  NFPA-compliant fire extinguishers, emergency lighting, and inspection services to keep your practice safe and compliant with Texas state regulations.
-
-- 💦 **Facility Power Washing & Maintenance**  
-  Exterior cleaning for dental offices, clinics, and commercial buildings — maintaining a professional first impression for your patients.
 
 - 📹 **Security Camera & Access Control Systems**  
   Discreet, reliable IP camera systems and access management solutions that protect your property and maintain patient privacy.

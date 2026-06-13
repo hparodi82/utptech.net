@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-{{ "<!-- industry single -->" | safeHTML }}
+<!-- industry single -->
 <section class="section">
   <div class="container">
     <div class="row">
 
-      {{ "<!-- sidebar -->" | safeHTML }}
+      <!-- sidebar -->
       <aside class="col-lg-4 order-lg-1 order-2">
         <div class="mb-3">
           <a href="{{ `industry/` | relLangURL }}" class="btn btn-primary w-100">← Back to Industries</a>
@@ -37,7 +37,8 @@
 
         <div class="mb-50">
           <h3 class="mb-20 h5">{{ i18n "free_consultation" }}</h3>
-          <form action="{{ site.Params.contact_form_action | safeURL }}" class="row">
+          <form action="{{ site.Params.contact_form_action | safeURL }}" method="post" class="row">
+            <input type="hidden" name="source" value="{{ .Title }} Industry Page">
             <div class="col-lg-12">
               <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
             </div>
@@ -48,7 +49,7 @@
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="col-lg-12">
-              <textarea name="question" id="question" class="form-control p-2" placeholder="Your Question Here..." style="height: 150px;"></textarea>
+              <textarea name="message" id="message" class="form-control p-2" placeholder="Your Question Here..." style="height: 150px;"></textarea>
             </div>
             <div class="col-lg-12">
               <button class="btn btn-primary" type="submit">{{ i18n "submit" }}</button>
@@ -57,7 +58,7 @@
         </div>
       </aside>
 
-      {{ "<!-- industry content -->" | safeHTML }}
+      <!-- industry content -->
       <div class="col-lg-8 order-lg-2 order-1">
         {{ partial "image.html" (dict "Src" .Params.bg_image "Alt" .Title "Class" `w-100 mb-50 rounded-top`) }}
         <div class="post-content">

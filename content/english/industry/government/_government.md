@@ -22,12 +22,6 @@ Our certified technicians and engineers deliver secure, compliant, and cost-effe
 - 🧵 **Structured Cabling & Data Installations**  
   Certified CAT6 and fiber optic cabling for offices, command centers, and municipal buildings — built for reliability and longevity.
 
-- 🔥 **Fire Protection & Life Safety Compliance**  
-  Licensed inspection, installation, and maintenance of fire extinguishers, suppression systems, and emergency lighting to ensure NFPA and state compliance.
-
-- 💦 **Public Facility Power Washing & Maintenance**  
-  Cleaning and restoration services for public facilities, parking structures, and community centers — maintaining a clean, safe environment for all.
-
 - 📹 **Security Camera & Access Control Systems**  
   High-definition surveillance, access management, and perimeter monitoring solutions tailored for government buildings and campuses.
 

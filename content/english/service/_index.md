@@ -2,7 +2,7 @@
 title: "Our Services"
 date: 2025-01-01T12:00:00+06:00
 bg_image: images/banner/home/slide2-1.png
-description: "Up To Par Technologies delivers integrated Technology, Fire & Life Safety, and Exterior Facility services across Texas."
+description: "Up To Par Technologies delivers integrated Technology and IT Infrastructure services for businesses across Texas."
 
 ################## Satisfied clients ###############
 satisfied_clients:
@@ -30,13 +30,13 @@ testimonial:
 ## 🔧 Complete Service Solutions Designed to Keep Your Business Up To Par
 
 At **Up To Par Technologies**, we offer a unified set of professional services that help businesses operate  
-**smoother, safer, cleaner, and more efficiently** — all under one trusted provider.
+**reliably, securely, and efficiently** — all under one trusted provider.
 
-We focus on three core divisions designed to reduce downtime, improve safety, maintain compliance, and enhance the presentation of your facility.
+We focus on building and maintaining the technology infrastructure that keeps your business running, protected, and ready to grow.
 
 ---
 
-### 1️⃣ Technology & Structured Cabling Services
+### ⚙️ Technology & Structured Cabling Services
 
 Modern businesses depend on strong, reliable technology. We design and maintain systems that help you stay connected, productive, and protected.
 
@@ -64,59 +64,8 @@ Modern businesses depend on strong, reliable technology. We design and maintain 
 
 ---
 
-### 2️⃣ Fire Extinguisher & Life-Safety Services
-
-As a division of **RGV Fire Extinguisher Company**, we ensure your workplace remains **code-compliant, fully protected, and always inspection-ready**.
-
-#### 🔥 Fire Extinguishers
-- Sales, installation, and inspection  
-- Annual certification (NFPA-compliant)  
-- Recharging & maintenance  
-- Class A, B, C, D, and K extinguishers  
-
-#### 🧯 Kitchen Hood Suppression Systems
-- Inspections & servicing  
-- System recharge & tagging  
-- Nozzle replacement  
-- Grease fire compliance for restaurants  
-
-#### 🚨 Emergency Lighting & Exit Signs
-- Function testing & certification  
-- Battery replacement  
-- Code compliance corrections  
-
-#### 📄 Compliance Documentation
-- Inspection reports  
-- Insurance-required documentation  
-- Deficiency correction plans  
-
----
-
-### 3️⃣ Pressure Washing & Exterior Facility Services
-
-We help businesses maintain clean, safe, and professional properties — first impressions matter.
-
-#### 💦 Exterior Cleaning
-- Building wash  
-- Concrete & sidewalk cleaning  
-- Dumpster pad and grease removal  
-- Parking lot & driveway cleaning  
-
-#### 🧽 Commercial Cleaning for Heavy-Traffic Areas
-- Restaurant back-of-house sanitation  
-- Drive-thru degreasing  
-- Plaza and retail storefront cleaning  
-
-#### 🛠️ Maintenance Support
-- Scheduled service plans  
-- Before/after photo documentation  
-- Night or early-morning availability  
-
----
-
 ### ⭐ Why Businesses Choose Up To Par Technologies
 
-- **All-in-one provider:** tech, fire safety, and facility services  
 - **Local teams across Austin, San Antonio, and the Rio Grande Valley**  
 - **Licensed & certified technicians**  
 - **Transparent pricing & professional documentation**  
@@ -126,7 +75,7 @@ We help businesses maintain clean, safe, and professional properties — first i
 
 ### 📞 Ready to Get Up To Par?
 
-Whether you need a network upgrade, a fire inspection, or exterior cleaning, our team is ready to help.
+Whether you need a network upgrade, a new cabling installation, or IT support, our team is ready to help.
 
 👉 [Explore Individual Services](/service/)  
 👉 [Contact Us to Schedule Service](/contact/)

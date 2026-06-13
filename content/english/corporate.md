@@ -20,12 +20,6 @@ From structured cabling and managed IT to facility safety and compliance, our se
 - 🧵 **Structured Cabling & Data Infrastructure**  
   CAT6/Fiber installations, data center buildouts, and office network rewiring — certified to support high-speed data and VoIP systems.
 
-- 🔥 **Fire Protection & Life Safety**  
-  NFPA-compliant extinguishers, suppression systems, and emergency lighting inspections to maintain corporate and regulatory compliance.
-
-- 💦 **Facility Maintenance & Power Washing**  
-  Professional exterior cleaning, pressure washing, and hood maintenance for offices, warehouses, and corporate campuses.
-
 - 📹 **Physical Security & Access Control**  
   IP camera deployments, access panels, and integrated monitoring solutions for a safer workplace.
 
@@ -33,10 +27,10 @@ From structured cabling and managed IT to facility safety and compliance, our se
 
 ## 🧠 Why Enterprises Choose Up To Par Technologies
 
-- One Trusted Partner for IT, Safety, and Facility Operations  
+- One Trusted Partner for All Your Technology Needs  
 - Proven Experience with Multi-Location Rollouts  
 - Scalable Managed Service Agreements  
-- Certified Technicians, Engineers & Safety Professionals  
+- Certified Technicians and Network Engineers  
 - Dedicated Account Support and Fast On-Site Response  
 
 ---

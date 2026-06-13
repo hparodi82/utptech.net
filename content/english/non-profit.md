@@ -21,12 +21,6 @@ We understand the unique challenges of limited budgets, volunteer-driven operati
 - 🧵 **Structured Cabling & Low-Voltage Wiring**  
   Clean, organized installation of CAT6, fiber, and network drops for offices, conference rooms, classrooms, worship spaces, and community facilities.
 
-- 🔥 **Fire Extinguisher & Life-Safety Compliance**  
-  Licensed inspections, installations, and emergency lighting services — keeping your facility safe for staff, volunteers, and visitors.
-
-- 💦 **Facility Power Washing & Exterior Cleaning**  
-  Professional maintenance for community centers, worship buildings, administrative offices, and shelters — creating a clean, welcoming environment.
-
 - 📹 **Security Cameras & Access Control**  
   Surveillance and access control solutions protecting donation areas, administrative spaces, storage rooms, and event facilities.
 

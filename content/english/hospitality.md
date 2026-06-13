@@ -2,14 +2,14 @@
 title: "Hospitality & Hotel Solutions"
 date: 2025-10-31T14:20:00+06:00
 bg_image: images/banner/industry/corporate/corporate-001.png
-description: "Technology, safety, and facility solutions designed for hotels, resorts, and hospitality venues."
+description: "Managed IT, structured cabling, smart automation, and network solutions designed for hotels, resorts, and hospitality venues."
 url: "/industry/hospitality/"
 type: "industry"
 ---
 
 ### Comfort. Safety. Connectivity.
 
-At **Up To Par Technologies**, we support **hotels, resorts, lodges, event centers, and hospitality facilities** with integrated technology, fire-safety, and facility maintenance solutions.  
+At **Up To Par Technologies**, we support **hotels, resorts, lodges, event centers, and hospitality facilities** with integrated technology solutions built for hospitality environments.  
 Our goal is to help you deliver an exceptional guest experience — with reliable networks, safe environments, and clean, welcoming spaces.
 
 ---
@@ -22,11 +22,8 @@ Our goal is to help you deliver an exceptional guest experience — with reliabl
 - 🧵 **Structured Cabling & Low-Voltage Infrastructure**  
   Professional CAT6/fiber cabling for front desk systems, IPTV, cameras, access points, smart-room systems, card-key readers, and back-office networks.
 
-- 🔥 **Fire Extinguisher & Life-Safety Compliance**  
-  NFPA-certified extinguisher servicing, emergency lighting inspections, and life-safety compliance for hotels and hospitality buildings.
-
-- 💦 **Exterior Power Washing & Property Maintenance**  
-  Cleaning for walkways, pool decks, building exteriors, porte-cochère areas, parking structures, patios, and guest-facing entrances.
+- 📡 **Smart Automation & AV Systems**  
+  In-room technology, digital signage, smart controls, and AV integration to elevate the modern guest experience.
 
 - 📹 **Security Camera & Access Control Systems**  
   Full surveillance coverage for hallways, elevators, perimeter areas, parking lots, lobbies, and restricted staff areas — with secure remote monitoring.
@@ -36,10 +33,10 @@ Our goal is to help you deliver an exceptional guest experience — with reliabl
 ## 🧠 Why Hospitality Leaders Choose Up To Par Technologies
 
 - Experienced with Hotels, Resorts & Large Hospitality Campuses  
-- Certified Network, Fire-Safety & Facility Professionals  
+- Certified Network Engineers & AV Integration Specialists  
 - Fast Response Times & Flexible After-Hours Scheduling  
 - Clean, Organized, Code-Compliant Installations  
-- End-to-End Support: IT, Safety, Facility Upkeep & More
+- End-to-End Support: Networking, Security, AV & Smart Systems
 
 ---
 

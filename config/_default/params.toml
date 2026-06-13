@@ -68,10 +68,10 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 author = "Up to Par Technologies" 
-description = "Up to Par Technologies provides Managed IT, structured cabling, cybersecurity, VoIP, fire safety, and pressure washing services to businesses across Texas." 
+description = "Up to Par Technologies provides Managed IT, structured cabling, cybersecurity, VoIP, smart automation, and IT consulting to businesses across Texas." 
 image = "images/favicon.png" # this image will be used as fallback if a page has no image of its own
 bg_image = "images/background/page-title.jpg" # this image will be used as fallback if a page has no image of its own
-keywords = ["managed IT services Texas", "structured cabling Austin", "cybersecurity solutions", "VoIP solutions", "IT consulting Texas", "fire safety services", "pressure washing commercial", "Up to Par Technologies", "network solutions Texas"] 
+keywords = ["managed IT services Texas", "structured cabling Austin", "cybersecurity solutions", "VoIP solutions", "IT consulting Texas", "smart office automation", "network design Texas", "Up to Par Technologies", "IT support Leander TX"] 
 
 # matomo tracking: see https://matomo.org/
 [matomo]

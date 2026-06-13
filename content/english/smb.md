@@ -21,12 +21,6 @@ we deliver scalable solutions designed to grow with your business — not slow i
 - 🧵 **Structured Cabling & Office Buildouts**  
   Professional low-voltage wiring for offices, retail, and warehouse spaces — clean, labeled, and certified connections that support your network and devices.
 
-- 🔥 **Fire & Safety Compliance**  
-  Licensed installation and annual inspections for extinguishers, emergency lighting, and kitchen suppression systems — protecting your people and property.
-
-- 💦 **Facility & Power Washing Services**  
-  Exterior pressure washing, parking lot cleaning, and building maintenance for a spotless, professional image.
-
 - 📹 **Security & Surveillance Integration**  
   Camera systems, access control, and remote monitoring for smarter, safer business operations.
 
@@ -34,7 +28,7 @@ we deliver scalable solutions designed to grow with your business — not slow i
 
 ## 🏢 Why SMBs Choose Up To Par Technologies
 
-- One Partner for IT, Safety, and Facility Solutions  
+- One Partner for All Your Technology Needs  
 - Affordable Maintenance Plans with Fast Response Times  
 - Certified Technicians & Network Professionals  
 - Scalable Solutions for Single or Multi-Site Businesses  

@@ -16,9 +16,6 @@ From fire suppression and hood systems to technology, surveillance, and facility
 
 ## 🍽️ Core Services for Restaurants & Food Service
 
-- 🔥 **Fire Extinguishers & Life-Safety Systems**  
-  NFPA 10-compliant extinguisher installation, annual inspections, recharging, and emergency lighting checks.
-
 - 🍳 **Kitchen Hood & Fire Suppression Systems**  
   Certified installation, semi-annual inspections, and maintenance for Ansul, Kidde, Pyro-Chem, and other restaurant-grade systems.
 
@@ -30,9 +27,6 @@ From fire suppression and hood systems to technology, surveillance, and facility
 
 - 📹 **Security Camera & Access Control Systems**  
   Smart surveillance for kitchens, storage areas, cash-handling locations, and dining rooms — all accessible from mobile or onsite monitors.
-
-- 💦 **Exterior Cleaning & Power Washing**  
-  Professional washing for dumpsters, grease areas, sidewalks, drive-thrus, patios, and storefronts to maintain a clean, inviting environment.
 
 ---
 

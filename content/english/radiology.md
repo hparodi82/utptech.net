@@ -9,7 +9,7 @@ url: "/industry/radiology/"
 ### Precision. Connectivity. Compliance.
 
 At **Up To Par Technologies**, we provide secure, reliable, and code-compliant technology and facility solutions for **radiology and imaging centers**.  
-From high-speed data cabling to fire-safety systems and building maintenance, we ensure your imaging operations run with precision, safety, and efficiency.
+From high-speed data cabling to HIPAA-compliant network security, we ensure your imaging operations run with precision, safety, and efficiency.
 
 ---
 
@@ -21,11 +21,8 @@ From high-speed data cabling to fire-safety systems and building maintenance, we
 - 🧵 **Structured Cabling & Fiber Installations**  
   Certified CAT6 and fiber cabling for MRI, CT, and X-ray rooms — engineered for EMI resistance and compliance with medical-grade standards.
 
-- 🔥 **Fire Safety & Life-Safety Systems**  
-  Installation and annual inspections of fire extinguishers, suppression systems, and emergency lighting for healthcare environments.
-
-- 💦 **Facility Power Washing & Maintenance**  
-  Cleaning and upkeep of exterior surfaces, parking areas, and building exteriors to maintain a professional and sanitary image.
+- 🔐 **Cybersecurity & HIPAA Compliance**  
+  Endpoint protection, network segmentation, and data encryption policies that safeguard patient imaging data and regulatory standing.
 
 - 📹 **Security & Access Control Integration**  
   Surveillance and access systems that safeguard patient data, expensive imaging equipment, and restricted lab areas.

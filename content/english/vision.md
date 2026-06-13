@@ -9,7 +9,7 @@ url: "/industry/vision/"
 ### Clarity. Reliability. Confidence.
 
 At **Up To Par Technologies**, we deliver complete technology, safety, and facility solutions for **optometry clinics, ophthalmology centers, and vision care providers**.  
-From imaging-equipment networking to HIPAA-compliant security and fire-safety systems, we help practices operate smoothly, securely, and professionally.
+From imaging-equipment networking to HIPAA-compliant security and patient data protection, we help practices operate smoothly, securely, and professionally.
 
 ---
 
@@ -20,12 +20,6 @@ From imaging-equipment networking to HIPAA-compliant security and fire-safety sy
 
 - 🧵 **Structured Cabling & Low-Voltage Infrastructure**  
   Clean, labeled, and certified cabling for exam rooms, pre-testing stations, imaging suites, and admin offices — optimized for high-bandwidth diagnostic devices.
-
-- 🔥 **Fire Extinguisher & Life-Safety Compliance**  
-  Licensed inspection, installation, and servicing of fire extinguishers, emergency lighting, and safety equipment per NFPA and Texas regulations.
-
-- 💦 **Exterior Power Washing & Facility Maintenance**  
-  Professional cleaning services for clinics, medical buildings, and plaza suites — keeping patient-facing areas spotless and welcoming.
 
 - 📹 **Security Cameras & Access Control Systems**  
   HIPAA-aligned surveillance and access control protecting patient areas, lab spaces, optical rooms, and inventory storage.

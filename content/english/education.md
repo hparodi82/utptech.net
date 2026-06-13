@@ -23,14 +23,8 @@ From secure classroom networks to clean, code-compliant campuses, we help educat
 - 🧵 **Structured Cabling & Classroom Connectivity**  
   Fiber and CAT6 cabling for classrooms, auditoriums, labs, libraries, student lounges, and administrative buildings — cleanly installed and certified.
 
-- 🔥 **Fire Extinguisher & Life-Safety Services**  
-  Licensed annual inspections, emergency lighting maintenance, and NFPA-compliant fire protection for campuses and multi-building facilities.
-
 - 📹 **Campus Security Cameras & Access Control**  
   Surveillance systems, controlled entry points, and monitoring solutions that help protect staff, students, labs, and equipment.
-
-- 💦 **Exterior Power Washing & Facility Maintenance**  
-  Cleaning services for buildings, walkways, stadiums, gyms, and student housing — improving campus appearance and safety.
 
 ---
 

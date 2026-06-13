@@ -12,7 +12,7 @@ satisfied_clients:
   title: Our Clients
   content: >
     Up To Par Technologies proudly supports a diverse range of industries — from medical and dental practices to government,
-    enterprise, hospitality, and small businesses. We provide dependable technology, fire safety, and facility services that help
+    enterprise, hospitality, and small businesses. We provide dependable technology solutions that help
     organizations stay secure, compliant, and operating at the highest standard.
   logo:
     - images/client-logo/client-logo-1-white.png
@@ -40,13 +40,13 @@ We don’t just serve industries —
 ---
 
 ## 🏥 Medical Clinics & Healthcare Facilities
-Reliable IT systems, compliant fire safety, and clean, professional facilities.  
+Reliable IT systems, HIPAA-aligned security, and dependable network infrastructure.  
 We support EMR connectivity, network uptime, HIPAA-aligned security, and NFPA-compliant safety services.
 
 ---
 
 ## 🦷 Dental Practices & DSOs
-Secure networks for imaging, VoIP, and patient systems, plus full fire safety compliance and facility cleaning.
+Secure networks for imaging, VoIP, and patient systems — HIPAA-compliant and always available.
 
 ---
 
@@ -56,7 +56,7 @@ Structured cabling, network design, camera systems, and clean exterior maintenan
 ---
 
 ## 🎓 Educational Institutions
-K–12 and higher education rely on us for networking, fire extinguisher services, security cameras, and clean, safe facilities.
+K–12 and higher education rely on us for networking, security cameras, Wi-Fi deployments, and reliable IT infrastructure.
 
 ---
 
@@ -82,12 +82,12 @@ We support enterprise environments with scalable IT, structured cabling, complia
 ---
 
 ## 🏨 Hospitality & Hotels
-High-speed networks, surveillance, fire safety, and spotless outdoor spaces designed to elevate guest experience.
+High-speed networks, surveillance, and enterprise Wi-Fi designed to elevate every guest interaction.
 
 ---
 
 ## 🍽️ Restaurants & Food Service
-Kitchen suppression systems, hood cleaning, fire extinguisher tagging, pressure washing, and technology support for modern operations.
+Reliable POS networks, kitchen display systems, surveillance, VoIP, and technology support for modern food-service operations.
 
 ---
 
@@ -96,9 +96,6 @@ No matter your industry, **Up To Par Technologies** provides the complete packag
 
 - Managed IT & Networking  
 - Structured Cabling & Fiber  
-- Fire Extinguisher & Life Safety  
-- Kitchen Hood Cleaning (NFPA 96)  
-- Commercial Pressure Washing  
 - Security Cameras & Access Control  
 - VoIP & Communication Systems  
 
