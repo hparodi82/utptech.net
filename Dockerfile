@@ -1,7 +1,7 @@
 # Build stage
 FROM hugomods/hugo:exts-non-root AS builder
 WORKDIR /site
-COPY . .
+COPY --chown=1000:1000 . .
 RUN npm install && hugo --minify
 
 # Serve stage
