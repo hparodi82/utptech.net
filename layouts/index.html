@@ -90,12 +90,9 @@
 				<h2 class="section-title section-title-border">{{ $service.title | markdownify }}</h2>
 			</div>
 			{{ $homepageCards := slice
-				"service/technology/managed_it"
-				"service/technology/it_consulting"
-				"service/technology/structured_cabling"
-				"service/technology/mit-smart-setup"
-				"service/technology/mit-voip"
-				"service/technology/mit-ip-cameras"
+				"service/infrastructure/private-cloud"
+				"service/infrastructure/open-source-apps"
+				"service/infrastructure/managed-infrastructure"
 			}}
 			{{ range $homepageCards }}
 			{{ with site.GetPage . }}

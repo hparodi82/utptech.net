@@ -30,110 +30,21 @@ weight = 2
 
   [[main]]
     parent = "services"
-    name   = "Managed IT Services"
-    url    = "service/technology/managed_it/"
+    name   = "Private Cloud & MicroCloud"
+    url    = "service/infrastructure/private-cloud/"
     weight = 1
 
   [[main]]
     parent = "services"
-    name   = "IT Consulting"
-    url    = "service/technology/it_consulting/"
+    name   = "Open-Source Applications"
+    url    = "service/infrastructure/open-source-apps/"
     weight = 2
 
   [[main]]
     parent = "services"
-    name   = "Structured Cabling"
-    url    = "service/technology/structured_cabling/"
+    name   = "Managed Infrastructure"
+    url    = "service/infrastructure/managed-infrastructure/"
     weight = 3
-
-  [[main]]
-    parent = "services"
-    name   = "Smart Business & Home Office Setup"
-    url    = "service/technology/mit-smart-setup/"
-    weight = 4
-
-  [[main]]
-    parent = "services"
-    name   = "VoIP Phone Systems"
-    url    = "service/technology/mit-voip/"
-    weight = 5
-
-  [[main]]
-    parent = "services"
-    name   = "IP Camera & Surveillance"
-    url    = "service/technology/mit-ip-cameras/"
-    weight = 6
-
-[[main]]
-  name  = "Industries"
-  weight = 4
-  identifier = "industries"
-
-  [[main]]
-    parent = "industries"
-    name   = "Medical"
-    url    = "industry/medical/"
-    weight = 1
-
-  [[main]]
-    parent = "industries"
-    name   = "Dental"
-    url    = "industry/dental/"
-    weight = 2
-
-  [[main]]
-    parent = "industries"
-    name   = "Vision Care"
-    url    = "industry/vision/"
-    weight = 3
-
-  [[main]]
-    parent = "industries"
-    name   = "Radiology"
-    url    = "industry/radiology/"
-    weight = 4
-
-  [[main]]
-    parent = "industries"
-    name   = "Education"
-    url    = "industry/education/"
-    weight = 5
-
-  [[main]]
-    parent = "industries"
-    name   = "Government"
-    url    = "industry/government/"
-    weight = 6
-
-  [[main]]
-    parent = "industries"
-    name   = "Non-Profit"
-    url    = "industry/non-profit/"
-    weight = 7
-
-  [[main]]
-    parent = "industries"
-    name   = "SMB"
-    url    = "industry/smb/"
-    weight = 8
-
-  [[main]]
-    parent = "industries"
-    name   = "Corporate & Enterprise"
-    url    = "industry/corporate/"
-    weight = 9
-
-  [[main]]
-    parent = "industries"
-    name   = "Hospitality"
-    url    = "industry/hospitality/"
-    weight = 10
-  
-  [[main]]
-    parent = "industries"
-    name   = "Restaurants"
-    url    = "industry/restaurant/"
-    weight = 11
 
 
 #[[main]]
@@ -149,7 +60,7 @@ weight = 2
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 4
 
 #[[main]]
 #hasChildren = true

@@ -34,12 +34,9 @@
           <h4 class="text-white mb-4">{{ i18n "services" }}</h4>
           <ul class="footer-links">
             {{ $footerServices := slice
-              "service/technology/managed_it"
-              "service/technology/it_consulting"
-              "service/technology/structured_cabling"
-              "service/technology/mit-smart-setup"
-              "service/technology/mit-voip"
-              "service/technology/mit-ip-cameras"
+              "service/infrastructure/private-cloud"
+              "service/infrastructure/open-source-apps"
+              "service/infrastructure/managed-infrastructure"
             }}
             {{ range $footerServices }}
             {{ with site.GetPage . }}
@@ -49,17 +46,15 @@
           </ul>
         </div>
 
-        <!-- col 3: industries -->
+        <!-- col 3: capabilities -->
         <div class="col-lg-2 col-md-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-4">Industries</h4>
+          <h4 class="text-white mb-4">Capabilities</h4>
           <ul class="footer-links">
-            {{ range site.Menus.main }}
-            {{ if eq .Identifier "industries" }}
-            {{ range .Children }}
-            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
-            {{ end }}
-            {{ end }}
-            {{ end }}
+            <li>MicroCloud &amp; LXD</li>
+            <li>Linux &amp; Containers</li>
+            <li>Kubernetes</li>
+            <li>Storage &amp; Backups</li>
+            <li>Monitoring &amp; Automation</li>
           </ul>
         </div>
 
